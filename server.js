@@ -21,6 +21,9 @@ function auth (req, res, next) {
     }
 
     var auth = new Buffer(authHeader.split(' ')[1], 'base64').toString().split(':');
+
+    console.log("divyanshu !!!!" + auth);
+
     var user = auth[0];
     var pass = auth[1];
     if (user == 'admin' && pass == 'password') {
