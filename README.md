@@ -3,8 +3,22 @@ Used the basic access authentication approach to do basic authentication.
 
 ### Description 
 
+*  contains 3 Files server.js,cookie.js,session.js 
+
+>> server.js is About  
+
 *  Set up an Express server to handle basic authentication.
 *  Use the basic access authentication approach to do basic authentication.
+
+>> cookie.js is About
+*  Set up an Express application to send signed cookies.
+*  Set up your Express application to parse the cookies in the header of the incoming request messages
+
+
+>> session.js is About
+
+* Set up your Express server to use Express sessions to track authenticated users
+* Enable clients to access secure resources on the server after authentication.
 
 
 ### Installation Instructions :grey_exclamation:
@@ -30,9 +44,10 @@ Used the basic access authentication approach to do basic authentication.
     "express": "~4.13.4",
     "jade": "~1.11.0",
     "morgan": "~1.7.0",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "session-file-store": "~1.0.0",
+    "express-session": "~1.14.2"
   }
-}
 
 
 ### For Testing (Postman)
