@@ -4,7 +4,7 @@ var session = require('express-session');
 var FileStore = require('session-file-store')(session);
 
 var hostname = 'localhost';
-var port = 3000;
+var port = 8000;
 
 var app = express();
 
@@ -64,5 +64,5 @@ app.use(function(err,req,res,next) {
 });
 
 app.listen(port, hostname, function(){
-  console.log(`Server running at http://${hostname}:${port}/`);
+  console.log('Server running at http://${'+hostname+'}:${'+port+'}/');
 });

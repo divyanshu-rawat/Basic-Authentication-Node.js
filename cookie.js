@@ -3,7 +3,7 @@ var morgan = require('morgan');
 var cookieParser = require('cookie-parser');
 
 var hostname = 'localhost';
-var port = 8002;
+var port = 4000;
 
 var app = express();
 
