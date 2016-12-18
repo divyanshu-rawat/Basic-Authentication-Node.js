@@ -28,9 +28,9 @@ Used the basic access authentication approach to do basic authentication.
 
 * Cd into that root folder you just cloned locally.
 
-* Open terminal in the current folder and type node server
+* Open terminal in the current folder and to run server.js type node server,to run cookie.js type node cookie .
 
-* This will start a server at http://localhost:3000
+* This will start a server at http://localhost:3000 for server.js , http://localhost:4000 for cookie.js  
 
 ### Package Manager Used (NPM)
 
