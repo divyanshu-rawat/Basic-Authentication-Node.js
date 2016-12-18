@@ -1,48 +1,39 @@
 var express = require('express');
-var morgan  = require('morgan');
+var morgan = require('morgan');
 var cookieParser = require('cookie-parser');
 
 var hostname = 'localhost';
-var port = 3000;
+var port = 8002;
 
 var app = express();
 
 app.use(morgan('dev'));
+
 app.use(cookieParser('12345-67890-09876-54321')); // secret key
 
-function auth (req,res,next){
+function auth (req, res, next) {
 
-
-	if(!req.singedCookies.user)
-	{
-		var authHeader = req.headers.authorization;
-
-		if(!authHeader)
-		{
-			var err = new Error('You are not authenticated!');
+    if (!req.signedCookies.user) {
+        var authHeader = req.headers.authorization;
+        if (!authHeader) {
+            var err = new Error('You are not authenticated!');
             err.status = 401;
             next(err);
             return;
-		}
-		
-		var auth = new Buffer(authHeader.split(' ')[1], 'base64').toString().split(':');
-        var user = auth[0];
-        var pass = auth[1];	
-
-        if(user == 'admin' && pass == 'password')
-        {
-        	// The server will send a signed cookie to the client upon successful authentication.
-        	res.cookie('user','admin',{signed:true});
-        	next(); //authorized
         }
-         else {
+        var auth = new Buffer(authHeader.split(' ')[1], 'base64').toString().split(':');
+        var user = auth[0];
+        var pass = auth[1];
+        if (user == 'admin' && pass == 'password') {
+            res.cookie('user','admin',{signed: true});
+            next(); // authorized
+        } else {
             var err = new Error('You are not authenticated!');
             err.status = 401;
             next(err);
         }
-	}
-
-	 else {
+    }
+    else {
         if (req.signedCookies.user === 'admin') {
             next();
         }
@@ -52,9 +43,7 @@ function auth (req,res,next){
             next(err);
         }
     }
-
 };
-
 
 app.use(auth);
 
@@ -70,7 +59,5 @@ app.use(function(err,req,res,next) {
 });
 
 app.listen(port, hostname, function(){
-
-  console.log(`Server running at http://${hostname}:${port}/`);
-
+  console.log('Server running at http://${' +hostname + '}:${' +port + '}/');
 });
