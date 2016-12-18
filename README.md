@@ -11,6 +11,7 @@ Used the basic access authentication approach to do basic authentication.
 *  Use the basic access authentication approach to do basic authentication.
 
 >> cookie.js is About
+
 *  Set up an Express application to send signed cookies.
 *  Set up your Express application to parse the cookies in the header of the incoming request messages
 
