@@ -5,18 +5,18 @@ Used the basic access authentication approach to do basic authentication.
 
 *  contains 3 Files server.js,cookie.js,session.js 
 
->> server.js is About  
+> server.js is About  
 
 *  Set up an Express server to handle basic authentication.
 *  Use the basic access authentication approach to do basic authentication.
 
->> cookie.js is About
+> cookie.js is About
 
 *  Set up an Express application to send signed cookies.
 *  Set up your Express application to parse the cookies in the header of the incoming request messages
 
 
->> session.js is About
+> session.js is About
 
 * Set up your Express server to use Express sessions to track authenticated users
 * Enable clients to access secure resources on the server after authentication.
@@ -34,10 +34,9 @@ Used the basic access authentication approach to do basic authentication.
 
 ```javascript
    http://localhost:3000 
-}
 ```
 
-* This will start a server for cokkie.js at 
+* This will start a server for cookie.js at 
 
 ```javascript
    http://localhost:4000 
