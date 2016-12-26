@@ -1,7 +1,7 @@
-# basic_auth_Node.js
+### basic_auth_Node.js
 Used the basic access authentication approach to do basic authentication.
 
-### Description 
+#### Description 
 
 *  contains 3 Files server.js,cookie.js,session.js 
 
@@ -22,7 +22,7 @@ Used the basic access authentication approach to do basic authentication.
 * Enable clients to access secure resources on the server after authentication.
 
 
-### Installation Instructions :grey_exclamation:
+#### Installation Instructions :grey_exclamation:
 
 * Clone or download the repo. into any fresh temporary folder.
 
@@ -30,13 +30,24 @@ Used the basic access authentication approach to do basic authentication.
 
 * Open terminal in the current folder and to run server.js type node server,to run cookie.js type node cookie .
 
-* This will start a server at http://localhost:3000 for server.js , http://localhost:4000 for cookie.js  
+* This will start a server for server.js at 
 
-### Package Manager Used (NPM)
+```javascript
+   http://localhost:3000 
+}
+```
+
+* This will start a server for cokkie.js at 
+
+```javascript
+   http://localhost:4000 
+```
+
+#### Package Manager Used (NPM)
 
 * NPM is the default package manager for the JavaScript runtime environment Node.js.
 
-### Package.json (dependencies)
+#### Package.json (dependencies)
 
   "dependencies": {
     "body-parser": "~1.15.1",
@@ -51,7 +62,7 @@ Used the basic access authentication approach to do basic authentication.
   }
 
 
-### For Testing (Postman)
+#### For Testing (Postman)
 
 * Postman extension can be used for testing !
 * Supercharge your API workflow with Postman! Build, test, and document your APIs faster.
