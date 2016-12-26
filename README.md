@@ -28,9 +28,11 @@ Used the basic access authentication approach to do basic authentication.
 
 * Cd into that root folder you just cloned locally.
 
-* Open terminal in the current folder and type 
+* Open terminal in the current folder and to install all dependencies type 
 
-> npm install  to install all dependencies.
+```javascript
+   npm install  
+```
 
 *  Now typing node server.js This will start a server for server.js at 
 
