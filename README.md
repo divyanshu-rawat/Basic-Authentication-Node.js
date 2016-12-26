@@ -5,20 +5,20 @@ Used the basic access authentication approach to do basic authentication.
 
 *  contains 3 Files server.js,cookie.js,session.js 
 
-> server.js is About  
+> server.js is about  
 
-*  Set up an Express server to handle basic authentication.
-*  Use the basic access authentication approach to do basic authentication.
+*  Setting up an Express server to handle basic authentication.
+*  Using the basic access authentication approach to do basic authentication.
 
-> cookie.js is About
+> cookie.js is about
 
-*  Set up an Express application to send signed cookies.
-*  Set up your Express application to parse the cookies in the header of the incoming request messages
+*  Setting up an Express application to send signed cookies.
+*  Setting up your Express application to parse the cookies in the header of the incoming request messages
 
 
-> session.js is About
+> session.js is about
 
-* Set up your Express server to use Express sessions to track authenticated users
+* Setting up your Express server to use Express sessions to track authenticated users
 * Enable clients to access secure resources on the server after authentication.
 
 
@@ -28,19 +28,27 @@ Used the basic access authentication approach to do basic authentication.
 
 * Cd into that root folder you just cloned locally.
 
-* Open terminal in the current folder and to run server.js type node server,to run cookie.js type node cookie .
+* Open terminal in the current folder and type 
 
-* This will start a server for server.js at 
+*  node server.js This will start a server for server.js at 
 
 ```javascript
    http://localhost:3000 
 ```
 
-* This will start a server for cookie.js at 
+* node cookie.js This will start a server for cookie.js at 
 
 ```javascript
    http://localhost:4000 
 ```
+
+
+* node session.js This will start a server for session.js at 
+
+```javascript
+   http://localhost:8000 
+```
+
 
 #### Package Manager Used (NPM)
 
