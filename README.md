@@ -30,7 +30,9 @@ Used the basic access authentication approach to do basic authentication.
 
 * Open terminal in the current folder and type 
 
-*  node server.js This will start a server for server.js at 
+> npm install  to install all dependencies.
+
+*  Now typing node server.js This will start a server for server.js at 
 
 ```javascript
    http://localhost:3000 
