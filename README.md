@@ -1,26 +1,40 @@
+### For Any Query Ping Me
+
+[![Join the chat](https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg)](https://gitter.im/divyanshu001)
+
+##
+
 ### basic_auth_Node.js
 Used the basic access authentication approach to do basic authentication.
+
+##
 
 #### Description 
 
 *  contains 3 Files server.js,cookie.js,session.js 
 
-> server.js is about  
+##
+
+#### server.js is about  
 
 *  Setting up an Express server to handle basic authentication.
 *  Using the basic access authentication approach to do basic authentication.
 
-> cookie.js is about
+##
+
+#### cookie.js is about
 
 *  Setting up an Express application to send signed cookies.
 *  Setting up your Express application to parse the cookies in the header of the incoming request messages
 
+##
 
-> session.js is about
+#### session.js is about
 
 * Setting up your Express server to use Express sessions to track authenticated users
 * Enable clients to access secure resources on the server after authentication.
 
+##
 
 #### Installation Instructions :grey_exclamation:
 
@@ -52,11 +66,13 @@ Used the basic access authentication approach to do basic authentication.
 ```javascript
    http://localhost:8000 
 ```
-
+##
 
 #### Package Manager Used (NPM)
 
 * NPM is the default package manager for the JavaScript runtime environment Node.js.
+
+##
 
 #### Package.json (dependencies)
 
@@ -72,6 +88,7 @@ Used the basic access authentication approach to do basic authentication.
     "express-session": "~1.14.2"
   }
 
+##
 
 #### For Testing (Postman)
 
@@ -79,5 +96,21 @@ Used the basic access authentication approach to do basic authentication.
 * Supercharge your API workflow with Postman! Build, test, and document your APIs faster.
 * You can now fire up postman and then perform several operations on the REST API.
 
+##
+
+
+### Contributing
+
+1. Create your **_branch_**: `git checkout -b my-new-feature`
+
+2. **_Commit_** your changes: `git commit -m 'Add some feature'`
+
+3. **_Push_** to the branch: `git push origin my-new-feature`
+
+4. Send a **Pull Request**
+
+5. **_Enjoy!_**
+
+##
 
 
